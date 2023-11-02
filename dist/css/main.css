@@ -6,6 +6,61 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 2500px) {
+  main h1 {
+    font-size: 4.4rem;
+  }
+  main h2 {
+    font-size: 3rem;
+  }
+  main p, main #values span {
+    font-size: 1.85rem;
+  }
+}
+@media (max-width: 2500px) {
+  main h1 {
+    font-size: 3.5rem;
+  }
+  main h2 {
+    font-size: 2.5rem;
+  }
+  main p, main #values span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 2000px) {
+  main h1 {
+    font-size: 2.6rem;
+  }
+  main h2 {
+    font-size: 1.9rem;
+  }
+  main p, main #values span {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 1500px) {
+  main h1 {
+    font-size: 1.7rem;
+  }
+  main h2 {
+    font-size: 1.4rem;
+  }
+  main p, main #values span {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1000px) {
+  main h1 {
+    font-size: 1.4rem;
+  }
+  main h2 {
+    font-size: 1.1rem;
+  }
+  main p, main #values span {
+    font-size: 0.65rem;
+  }
+}
 body {
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
@@ -34,6 +89,31 @@ body #image img {
      object-fit: cover;
 }
 body #content {
-  padding: 9vh 5vw;
+  padding: 10vh 5vw;
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body h1 span {
+  color: hsl(277, 64%, 61%);
+}
+body p {
+  line-height: 4.2vh;
+  width: 95%;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+body #values {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 85%;
+  height: 25%;
+}
+body #values .feature span {
+  text-transform: uppercase;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-top: 7%;
+  display: block;
 }/*# sourceMappingURL=main.css.map */

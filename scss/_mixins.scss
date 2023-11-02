@@ -1,0 +1,15 @@
+@mixin font_sizes($size_01, $size_02, $size_03) {
+    main {
+        h1 {
+            font-size: $size_01;
+        }
+
+        h2 {
+            font-size: $size_02;
+        }
+
+        p, #values span {
+            font-size: $size_03;
+        }
+    }
+}

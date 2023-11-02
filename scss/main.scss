@@ -4,6 +4,7 @@
 @import './resets';
 @import './colors';
 @import './variables';
+@import './media-queries';
 
 body {
     background-color: map-get($primary-colors, very-dark-blue);
@@ -37,7 +38,36 @@ body {
     }
 
     #content {
-        padding: 9vh 5vw;
+        padding: 10vh 5vw;
         font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1 span {
+        color: map-get($primary-colors, soft-violet);
+    }
+
+    p {
+        line-height: 4.2vh;
+        width: 95%;
+        color: map-get($neutral-colors, slightly-transparent-white);
+    }
+
+    #values {
+        display: flex;
+        justify-content: space-between;
+        align-items:end;
+        width: 85%;
+        height: 25%;
+
+        .feature span {
+            text-transform: uppercase;
+            font-family: 'Lexend Deca', sans-serif;
+            color: map-get($neutral-colors, slightly-transparent-white);
+            margin-top: 7%;
+            display: block;
+        }
     }
 }
