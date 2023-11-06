@@ -61,6 +61,51 @@
     font-size: 0.65rem;
   }
 }
+@media (max-width: 750px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  p, #values span, footer {
+    font-size: 1rem;
+  }
+  body {
+    height: 140vh;
+  }
+  .main {
+    flex-direction: column;
+    min-width: 90%;
+    min-width: 95%;
+    height: auto;
+    margin: 20vh 0;
+    border-radius: 3vw;
+    text-align: center;
+  }
+  .main #image, .main #content {
+    width: 100%;
+  }
+  .main #content {
+    padding: 5vh 7vw;
+    height: 50%;
+    align-items: center;
+    gap: 2vh;
+  }
+  .main #values {
+    margin-top: 3vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+  }
+  .main #values .feature {
+    line-height: 1.4rem;
+  }
+  footer {
+    display: none;
+  }
+}
 body {
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
